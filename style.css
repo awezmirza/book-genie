@@ -1,0 +1,139 @@
+.book-container-loader {
+    min-height: 400px;
+    min-width: 50px;
+    background-color: black;
+    animation: shimmer 2s ease-in-out infinite;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 70px;
+    opacity: 0.5;
+    /* background: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.2) 25%, transparent 50%); */
+}
+
+.load-gif {
+    height: 300px;
+    width: 300px;
+}
+
+.note {
+    background-color: rgb(81, 2, 2);
+    text-align: center;
+    margin: 15px 55px;
+    border-radius: 15px;
+    padding: 10px;
+    border: 1px solid white;
+}
+
+.form-cntainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ipBtn {
+    margin: 10px;
+}
+
+#booksContainer {
+    color: bisque;
+}
+
+.dispHdn {
+    display: none;
+}
+
+body {
+    background-color: #242424;
+    color: antiquewhite;
+}
+
+@keyframes shimmer {
+
+    0%,
+    100% {
+        background-color: black;
+    }
+
+    50% {
+        background-color: grey;
+    }
+}
+
+.book-card {
+    background-color: rgb(46, 70, 70);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    width: 300px;
+}
+
+.book-card:hover {
+    background-color: rgb(50, 116, 116);
+    cursor: pointer;
+}
+
+
+.card-poster {
+    margin: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-title {
+    font-size: large;
+    font-weight: bolder;
+}
+
+#booksContainer {
+    display: flex;
+}
+
+a {
+    all: unset;
+    background-color: #febd69;
+    color: black;
+    padding: 5px;
+    border-radius: 2px;
+    margin-inline: auto;
+}
+
+#myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    display: block;
+    z-index: -1;
+    /* opacity: 0.15; */
+    filter: brightness(0.3);
+}
+
+.allContainer {
+    display: block;
+    z-index: 100;
+}
+
+img {
+    width: 180px;
+    height: 278px;
+    object-fit: contain;
+}
+
+.form-control {
+    background-color: #000000;
+    color: #f5f5f6;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: aliceblue;
+}
+
+.form-control:focus {
+    background-color: #282828;
+    color: #f5f5f6;
+}
